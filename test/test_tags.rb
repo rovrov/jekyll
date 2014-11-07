@@ -89,7 +89,7 @@ CONTENT
 
   context "in safe mode" do
     setup do
-      @tag = Jekyll::Tags::HighlightBlock.new('highlight', 'text ', ["test", "{% endhighlight %}", "\n"])
+      @tag = Jekyll::Tags::HighlightBlock.parse('highlight', 'text ', ["test", "{% endhighlight %}", "\n"], {})
     end
 
     should "allow linenos" do
