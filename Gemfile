@@ -6,4 +6,4 @@ if ENV['BENCHMARK']
   gem 'stackprof'
 end
 
-gem 'liquid', github: 'Shopify/liquid'
+gem 'liquid', github: 'Shopify/liquid', branch: '3-0-0-rc2'
